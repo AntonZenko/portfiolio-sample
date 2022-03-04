@@ -1,0 +1,36 @@
+.hero {
+    padding-top: 65px;
+    padding-bottom: 83px;
+    @media screen and (min-width:1024px){
+        padding-top: 128px;
+        padding-bottom: 105px;
+    }
+
+		&__text {
+            margin-bottom: 37px;
+            font-size: 18px;
+            line-height: 1.22;
+            color: $black-text-color;
+		}
+        &__img {
+            display: flex;
+            margin: 0 auto;
+        }
+}
+.hero__box {
+    width: 124px;
+    margin-bottom: 23px;
+}
+.hero__title {
+    font-family: 'Gilroy-bold', sans-serif;
+    font-size: 47px;
+    line-height: 1.23;
+    color: $black-text-color;
+
+}
+
+.menu-btn {
+    position: absolute;
+    right: 30px;
+    cursor: pointer;
+}
