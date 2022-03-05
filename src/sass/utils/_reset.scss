@@ -2,6 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
+    // border: 1px solid red;
 }
 
 h1,
@@ -35,6 +36,7 @@ button {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    color: inherit;
 }   
 
 .list {

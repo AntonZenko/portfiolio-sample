@@ -17,7 +17,7 @@
 }
 
 .mob-menu.is-hidden {
-    transform: translateX(100%);
+    transform: translateX(100%);    
 }
 
 .menu-close {
@@ -50,12 +50,21 @@
 }
 
 .mob-menu__lang-list {
+    position: absolute;
+    right: 30px;
+    bottom: 57px;
     display: flex;
     justify-content: flex-end;
+    transform-origin: bottom right;
+    transform: rotate(90deg) translateY(35px);
     color: $grey-text-color;
-    // transform: rotate(90deg);
 
 }
+
+.mob-menu__lang-item {
+    display: flex;
+}
+
 .mob-menu__lang-link {
     text-transform: uppercase;
     font-family: 'Gilroy-bold', sans-serif;
@@ -70,9 +79,3 @@
 .current {
     color: $black-text-color;
 }
-
-// .language {
-//     display: flex;
-//     align-items: flex-end;
-//     justify-content: flex-end;
-// }

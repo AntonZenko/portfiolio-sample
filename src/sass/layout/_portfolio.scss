@@ -17,9 +17,13 @@
     text-decoration: underline;
     font-size: 18px;
     line-height: 1.22;
+    color: inherit;
 }
 
 .portfolio__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     &:not(:first-child){
         margin-top: 78px;
     }
