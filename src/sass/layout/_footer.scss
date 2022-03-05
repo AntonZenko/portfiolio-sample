@@ -1,0 +1,39 @@
+.footer {
+    padding-top: 82px;
+    padding-bottom: 90px;
+}
+.footer__text-box{
+    margin: 0 auto;
+    // width: 100%;
+}
+
+.footer__text {
+    margin-top: 28px;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+}
+
+.send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 315px;
+    height: 42px;
+    border-radius: 50px;
+    background-color: $black-text-color;
+    color: $white-text-color;
+}
+
+.social__list {
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 315px;
+    display: flex;
+    justify-content: space-between;
+}
