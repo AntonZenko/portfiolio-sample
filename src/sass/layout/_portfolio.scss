@@ -19,16 +19,20 @@
     }
 }
 
-.portfolio__text {
+.portfolio__link {
     margin-top: 34px;
     text-align: center;
     text-decoration: underline;
     font-size: 18px;
     line-height: 1.22;
     color: inherit;
+    transition: $transition;
     @media screen and (min-width:768px){
         margin-top: 45px;
         
+    }
+    &:hover {
+        color: $grey-text-color;
     }
 }
 

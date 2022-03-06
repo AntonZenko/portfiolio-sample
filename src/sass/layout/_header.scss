@@ -20,5 +20,17 @@
         font-size: 18px;
         line-height: 22px;
         color: $grey-text-color;
+        padding: 2px 12px;
+        border-radius: 20px;
+        transition: $transition;
     }
+    &__link:hover {
+        background-color: $black-text-color;
+        color: $white-text-color;
+    }
+    &__link:focus {
+        background-color: $black-text-color;
+        color: $white-text-color;
+    }
+
 }

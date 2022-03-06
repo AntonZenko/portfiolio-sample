@@ -35,10 +35,15 @@
     border-radius: 50px;
     background-color: $black-text-color;
     color: $white-text-color;
+    transition: $transition;
+    cursor: pointer;
     @media screen and (min-width:768px){
         width: 180px;
         margin-top: 30px;
-        
+    }
+    &:hover {
+        background-color: $grey-text-color;
+        color: $black-text-color;
     }
 }
 
@@ -65,4 +70,15 @@
         margin-top: 45px;
     }
     
+}
+
+.social__item-logo {
+    fill: $black-text-color;
+    transition: $transition;
+    &:hover{
+        fill: $grey-text-color;
+    }
+    &:focus{
+        fill: $grey-text-color;
+    }
 }
