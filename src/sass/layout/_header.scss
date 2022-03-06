@@ -1,0 +1,24 @@
+.header {
+    @media screen and (max-width:767px){
+        display: none;
+    }
+    &__list {
+        margin: 0 auto;
+        max-width: 945px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid $grey-text-color;
+    }
+    &__item {
+        padding-top: 33px;
+        padding-bottom: 32px;
+
+    }
+    &__link {
+        font-family: 'Gilroy-Bold', sans-serif;
+        font-size: 18px;
+        line-height: 22px;
+        color: $grey-text-color;
+    }
+}

@@ -1,23 +1,42 @@
 .skills {
     padding-top: 82px;
     padding-bottom: 100px;
+    @media screen and (min-width:768px){
+        padding-top: 90px;
+        padding-bottom: 110px;
+        
+    }
 }
 
 .caption {
     text-align: center;
     margin-top: 50px;
+    @media screen and (min-width:768px){
+        margin-top: 70px;
+        
+    }
 }
 
 .skills__list {
     margin-top: 70px;
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+        max-width: 940px;
+        margin: 70px auto 0;
+    }
 }
 
 .skills__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    &:not(:first-child){
+    @media screen and (max-width:767px){
+        &:not(:first-child){
         margin-top: 80px;
+        }
+    }
+    @media screen and (min-width:768px){
     }
 }
 

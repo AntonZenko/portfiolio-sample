@@ -1,6 +1,11 @@
 .footer {
     padding-top: 82px;
     padding-bottom: 90px;
+    @media screen and (min-width:768px){
+        padding-top: 114px;
+        padding-bottom: 124px;
+        
+    }
 }
 .footer__text-box{
     margin: 0 auto;
@@ -12,6 +17,9 @@
     font-size: 18px;
     line-height: 1.22;
     text-align: center;
+    @media screen and (min-width:768px){
+        margin-top: 20px;
+    }
 }
 
 .send-btn {
@@ -27,6 +35,11 @@
     border-radius: 50px;
     background-color: $black-text-color;
     color: $white-text-color;
+    @media screen and (min-width:768px){
+        width: 180px;
+        margin-top: 30px;
+        
+    }
 }
 
 .social__list {
@@ -36,4 +49,20 @@
     max-width: 315px;
     display: flex;
     justify-content: space-between;
+    @media screen and (min-width:768px){
+        margin-top: 85px;
+        
+    }
+}
+
+.social__text {
+    margin-top: 48px;
+    font-size: 18px;
+    line-height: 1.22;
+    text-align: center;
+    color: $grey-text-color;
+    @media screen and (min-width:768px){
+        margin-top: 45px;
+    }
+    
 }

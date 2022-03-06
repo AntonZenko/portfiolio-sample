@@ -1,24 +1,38 @@
 .hero {
     padding-top: 65px;
     padding-bottom: 82px;
-    @media screen and (min-width:1024px){
-        padding-top: 128px;
+    @media screen and (min-width:768px){
+        padding-top: 50px;
         padding-bottom: 105px;
     }
 		&__text {
-            margin-bottom: 37px;
             font-size: 18px;
             line-height: 1.22;
             color: $black-text-color;
+            @media screen and (max-width:767px) {
+                margin-bottom: 37px;
+            }
 		}
         &__img {
             display: flex;
-            margin: 0 auto;
+            justify-content: center;
         }
 }
-.hero__box {
+
+.menu-btn {
+    position: fixed;
+    right: 30px;
+    cursor: pointer;
+    @media screen and (min-width:768px) {
+        display: none;
+    }
+}
+
+.hero__title-box {
     width: 124px;
-    margin-bottom: 23px;
+    @media screen and (max-width:767px) {
+        margin-bottom: 23px;
+    }
 }
 .hero__title {
     font-family: 'Gilroy-bold', sans-serif;
@@ -28,21 +42,42 @@
 
 }
 
-.menu-btn {
-    position: fixed;
+.hero__box {
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        max-width: 945px;
+        margin: 0 auto 50px;
+    }
+    
+}
+
+.menu__lang-list {
+    @media screen and (max-width:767px) {
+        display: none;
+    }
     right: 30px;
-    cursor: pointer;
-}
-
-.social__text {
-    margin-top: 48px;
-    font-size: 18px;
-    line-height: 1.22;
-    text-align: center;
-    color: $grey-text-color;
-}
-
-.hero__img {
     display: flex;
-    justify-content: center;
+    transform: rotate(-90deg) translateX(18px) translateY(18px);
+    color: $grey-text-color;
+
 }
+
+.menu__lang-link {
+    text-transform: uppercase;
+    font-family: 'Gilroy-bold', sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+}
+.menu__lang-link.eng::before {
+    content: '|';
+    color: $black-text-color;
+}
+
+.current {
+    color: $black-text-color;
+}
+
+// -----------------------------------------------
+
