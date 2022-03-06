@@ -1,0 +1,28 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn" type="button" data-modal-close>
+      <svg class="modal__btn--icon" width="116" height="16">
+        <use href="/images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="form__title">Hey! What you would like to know?</p>
+    <form action="#" class="js-speaker-form">
+      <div class="form__area">
+        <label class="form__text" for="user-text"></label>
+        <textarea
+          class="form__comment"
+          name="user-text"
+          id="user-text"
+          placeholder="Type something"
+        ></textarea>
+      </div>
+    </form>
+
+    <label class="check">
+      <input class="check__input" type="checkbox" name="policity-check" value="policity" required />
+      <span class="check__icon"></span>
+      <span class="check__text">I`m not zombie</span>
+    </label>
+    <button class="btn__send-form btn" type="submit">Send</button>
+  </div>
+</div>

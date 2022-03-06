@@ -1,0 +1,230 @@
+body.modal-open {
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity $transition, visibility $transition;
+  overflow-y: hidden;
+}
+
+/* modal window */
+
+.modal {
+  position: absolute;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  // right: 15;
+  transform: translate(-50%, -50%) rotateX(0deg);
+  background-color: $white-text-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: transform $transition;
+  overflow: auto;
+  @media screen and(max-width:467px) {
+    width: 90vw;
+  }
+  @media screen and(min-width:1200px) {
+    width: 528px;
+  }
+}
+
+// body.modal {
+//     overflow: hidden;
+// }
+
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) rotateX(-90deg);
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: $white-text-color;
+  fill: black;
+  transition: $transition;
+    &:hover,
+    &:focus {
+      fill: $grey-text-color;
+    }
+}
+
+/* modal form  */
+
+.form__area {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form__title {
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $black-text-color;
+}
+
+.form__text {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $grey-text-color;
+}
+
+.form__field {
+  position: relative;
+}
+.form__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: $transition;
+    &:hover,
+    &:focus {
+      border-color:$accent-color;
+    }
+}
+
+
+.form__icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: $transition;
+  fill: black;
+}
+
+.form__field:hover .form__icon,
+.form__field:focus .form__icon {
+  fill: $accent-color;
+}
+
+.form__comment {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+  transition: $transition;
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+    }
+    &::placeholder {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+
+.btn__send-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 315px;
+    height: 42px;
+    border-radius: 50px;
+    background-color: $black-text-color;
+    color: $white-text-color;
+    transition: $transition;
+    cursor: pointer;
+    @media screen and (min-width:768px){
+        width: 180px;
+        margin-top: 30px;
+    }
+    &:hover {
+        background-color: $grey-text-color;
+        color: $black-text-color;
+    }
+}
+
+/* checkbox  */
+
+.check {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.check__input {
+  -webkit-appearance: none;
+  position: absolute;
+    &:checked + .check__icon {
+    background-image: url('/images/check-on.svg');
+    transition: $transition;
+  }
+}
+
+.check__icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  // margin-right: 7px;
+  cursor: pointer;
+  background-image: url('/images/check-off.svg');
+  transition: $transition;
+}
+
+.check__text {
+  margin-left: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  color: $grey-text-color;
+  @media screen and (max-width:1200px) {
+    font-size: 13px;
+    line-height: 1.16
+  }
+}
+
+.check__link {
+  display: inline-block;
+  color: $accent-color;
+  @media screen and (max-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.16
+  }
+}
