@@ -1,0 +1,21 @@
+.myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
+  background: transparent;
+  fill: black;
+  transform: translate(-5px,-5px);
+  transition: transform  $transition;
+}
+
+.myBtn:hover,
+.myBtn:focus {
+    transform: scale(1.5);
+}
+
+// .myBtn__scroll {
+//   fill: teal;
+// }
